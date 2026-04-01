@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="30〜40代女性専門パーソナルトレーニング。運動未経験でも安心の完全マンツーマン指導。メンタルの不調・自己肯定感の低さにお悩みの方へ。心と体が整う寄り添い型トレーニング。東京都内出張対応・初回体験4,000円〜。">
+  <title>OGAKEN FITNESS | 30〜40代女性のための心と体が整うパーソナルトレーニング</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#top" class="header__logo">OGAKEN<span>FITNESS</span></a>
+      <nav class="header__nav" id="nav">
+        <ul>
+          <li><a href="#about">サービス</a></li>
+          <li><a href="#profile">プロフィール</a></li>
+          <li><a href="#results">実績</a></li>
+          <li><a href="#plans">料金</a></li>
+          <li><a href="#flow">流れ</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn--primary header__cta">まずは相談する</a>
+      <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="header__ig" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="メニューを閉じる">✕</button>
+    <ul>
+      <li><a href="#about" class="m-link">サービス</a></li>
+      <li><a href="#profile" class="m-link">プロフィール</a></li>
+      <li><a href="#results" class="m-link">実績</a></li>
+      <li><a href="#plans" class="m-link">料金</a></li>
+      <li><a href="#flow" class="m-link">サービスの流れ</a></li>
+      <li><a href="#contact" class="m-link">お問い合わせ</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--primary m-link" style="margin-top:2rem;display:inline-block;">初回体験を予約する</a>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="top">
+    <!-- Background -->
+    <div class="hero__bg">
+      <div class="hero__bg-dots"></div>
+      <p class="hero__bg-ghost" aria-hidden="true">FITNESS</p>
+    </div>
+
+    <!-- Right coral panel -->
+    <div class="hero__panel" aria-hidden="true">
+      <p class="hero__panel-wm">PERSONAL<br>TRAINER</p>
+      <div class="hero__panel-photo">
+        <svg viewBox="0 0 160 200" fill="none">
+          <ellipse cx="80" cy="58" rx="36" ry="40" fill="rgba(255,255,255,.2)"/>
+          <path d="M8 200 C8 136 152 136 152 200Z" fill="rgba(255,255,255,.2)"/>
+        </svg>
+        <span>PHOTO COMING SOON</span>
+      </div>
+      <div class="hero__panel-badge">
+        <strong>小笠原 健太</strong>
+        <span>Personal Trainer</span>
+      </div>
+    </div>
+
+    <!-- Left: main content -->
+    <div class="hero__body">
+      <div class="hero__content">
+        <div class="hero__eyebrow fade-in">
+          <span class="hero__eyebrow-bar"></span>30〜40代女性専門 / 運動未経験OK
+        </div>
+        <h1 class="hero__title">
+          <span class="hero__tl fade-in delay-1">「私なんて」を</span>
+          <span class="hero__tl fade-in delay-2">卒業する</span>
+          <span class="hero__tl fade-in delay-3"><em>最初の一歩。</em></span>
+        </h1>
+        <div class="hero__message fade-in delay-3">
+          <p>心が整えば、体も<strong>自然と変わる</strong></p>
+          <span class="hero__message-tag">運動未経験でも安心の寄り添い型トレーニング</span>
+        </div>
+        <div class="hero__actions fade-in delay-4">
+          <a href="#contact" class="btn btn--primary btn--lg">初回体験を予約する</a>
+          <a href="#plans" class="btn btn--outline btn--lg">料金を確認する</a>
+        </div>
+        <div class="hero__kpis fade-in delay-4">
+          <div class="hero__kpi">
+            <b>96<small>%</small></b><span>初心者のお客様の割合</span>
+          </div>
+          <div class="hero__kpi-sep"></div>
+          <div class="hero__kpi">
+            <b>30〜40<small>代</small></b><span>女性中心</span>
+          </div>
+          <div class="hero__kpi-sep"></div>
+          <div class="hero__kpi">
+            <b>4,000<small>円〜</small></b><span>初回体験料金</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll-indicator">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== NUMBERS ========== -->
+  <section class="numbers">
+    <div class="container">
+      <div class="numbers__grid">
+        <div class="numbers__item">
+          <span class="numbers__val">96<small>%</small></span>
+          <p>運動未経験・初心者</p>
+        </div>
+        <div class="numbers__item">
+          <span class="numbers__val">30〜40<small>代</small></span>
+          <p>女性のお客様が中心</p>
+        </div>
+        <div class="numbers__item">
+          <span class="numbers__val">3<small>年</small></span>
+          <p>トレーナー歴</p>
+        </div>
+        <div class="numbers__item">
+          <span class="numbers__val">92<small>%</small></span>
+          <p>「気持ちが前向きに」と回答</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / SERVICE ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">SERVICE</span>
+        <h2 class="section-head__ja">サービスについて</h2>
+      </div>
+      <p class="section-lead">
+        OGAKEN FITNESSは、30〜40代女性・運動未経験の方を中心にサポートするパーソナルトレーニングです。<br>
+        「痩せたい」だけじゃない。心の不調や自己肯定感の低さに寄り添い、体を動かすことで"自分を好きになる"お手伝いをします。
+      </p>
+      <div class="features">
+        <div class="feature-card fade-up">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>運動ゼロからでも大丈夫</h3>
+          <p>お客様の96%が運動未経験・初心者。「体育が苦手だった」「何年も運動していない」——そんな方こそ大歓迎。あなたのペースに合わせてゼロから丁寧に指導します。</p>
+        </div>
+        <div class="feature-card fade-up delay-1">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <h3>心が整うトレーニング</h3>
+          <p>体を動かすと、不思議と気持ちも前向きになります。メンタルの不調や自己肯定感の低さにお悩みの方へ、"心と体の両方"が整うプログラムを提供します。</p>
+        </div>
+        <div class="feature-card fade-up delay-2">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>完全マンツーマン・出張対応</h3>
+          <p>周りの目を気にせず、あなただけの空間で60分。東京都内のレンタルジムへ出張するので、ジム選びに迷う必要もありません。ジム使用料・交通費込みです。</p>
+        </div>
+        <div class="feature-card fade-up delay-3">
+          <div class="feature-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>無理しない・比べない</h3>
+          <p>「きつくて続かない」は過去の話。あなたの体力・体調に合わせて強度を調整するから、無理なく続けられます。他人と比べず、昨日の自分を少し超えることを大切にします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROFILE ========== -->
+  <section class="section profile" id="profile">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">PROFILE</span>
+        <h2 class="section-head__ja">トレーナー紹介</h2>
+      </div>
+      <div class="profile__inner">
+        <div class="profile__img-wrap fade-up">
+          <div class="profile__img-placeholder">
+            <svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="16" fill="rgba(255,111,97,0.3)"/><path d="M10 72c0-16.569 13.431-30 30-30s30 13.431 30 30" fill="rgba(255,111,97,0.15)"/></svg>
+            <p>PHOTO<br>COMING<br>SOON</p>
+          </div>
+        </div>
+        <div class="profile__content fade-up delay-1">
+          <div class="profile__name-block">
+            <h3 class="profile__name">小笠原 健太</h3>
+            <span class="profile__title">パーソナルトレーナー</span>
+          </div>
+          <p class="profile__bio">
+            北海道出身。小〜高校の8年間は<strong>ハンドボール</strong>、沖縄の大学では<strong>アメリカンフットボール部</strong>に所属し<strong>優秀選手賞</strong>を受賞。卒業後はSEとして上京するも、心身の不調で退職を経験。その後、7年以上の筋トレ経験を活かし<strong>パーソナルトレーナーに転身</strong>。現在は30〜40代女性を中心に指導しています。
+          </p>
+          <div class="profile__story">
+            <p class="profile__story-lead">── なぜ「心のケア」を大切にするのか</p>
+            <p class="profile__bio">
+              実は私自身、<strong>メンタルの不調で動けなくなった経験</strong>があります。<br>
+              前職で体調を崩して退職。実家で何もできない日々を過ごしていました。
+            </p>
+            <p class="profile__bio">
+              そんなとき、ふと始めた筋トレで<strong>少しずつ自己肯定感が戻ってきた。</strong><br>
+              「自分にもできることがある」と思えるようになり、心も体も回復していきました。だからこそ、同じように悩んでいる方の気持ちがわかります。
+            </p>
+            <p class="profile__story-quote">
+              「運動なんて私にできるかな…」<br>
+              そう思っているあなたにこそ、体を動かす喜びを知ってほしい。<br>
+              自分を好きになる一歩を、一緒に踏み出しましょう。
+            </p>
+          </div>
+          <div class="profile__specs">
+            <div class="profile__spec">
+              <dt>出身</dt>
+              <dd>北海道</dd>
+            </div>
+            <div class="profile__spec">
+              <dt>競技歴</dt>
+              <dd>ハンドボール 8年 ／ アメフト 4年 ／ 筋トレ 7年</dd>
+            </div>
+            <div class="profile__spec">
+              <dt>受賞歴</dt>
+              <dd>アメフト部 優秀選手賞</dd>
+            </div>
+            <div class="profile__spec">
+              <dt>トレーナー歴</dt>
+              <dd>3年</dd>
+            </div>
+            <div class="profile__spec">
+              <dt>資格</dt>
+              <dd>筋トレインストラクター</dd>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="profile__sns-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @ogaken_fitness
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== RESULTS ========== -->
+  <section class="section results" id="results">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">RESULTS</span>
+        <h2 class="section-head__ja">お客様の実績</h2>
+      </div>
+      <p class="section-lead">運動未経験からスタートしたお客様の変化をご紹介します。体重だけでなく、心の変化にもご注目ください。</p>
+      <div class="results__grid">
+        <div class="result-card fade-up">
+          <div class="result-card__tag">CASE 01</div>
+          <div class="result-card__client">40代 女性・運動未経験</div>
+          <div class="result-card__achievement">
+            <span class="result-card__num">-10.2</span>
+            <span class="result-card__unit">kg</span>
+          </div>
+          <div class="result-card__period">6ヶ月間のトレーニング</div>
+          <p>育児と仕事で自分を後回しにしていた毎日から一転。無理のないペースで続けた結果、10kg以上の減量に成功。「鏡を見るのが嫌じゃなくなった」と笑顔で話してくださいました。</p>
+        </div>
+        <div class="result-card fade-up delay-1">
+          <div class="result-card__tag">CASE 02</div>
+          <div class="result-card__client">30代 女性・運動初心者</div>
+          <div class="result-card__achievement">
+            <span class="result-card__num">-3.7</span>
+            <span class="result-card__unit">kg</span>
+          </div>
+          <div class="result-card__period">4ヶ月間のトレーニング</div>
+          <p>メンタルの不調をきっかけにトレーニングを開始。体重の変化以上に「朝起きるのがつらくなくなった」「気持ちが安定してきた」と、心の変化を実感いただきました。</p>
+        </div>
+      </div>
+      <p class="results__disclaimer">※個人差があります。効果を保証するものではありません。</p>
+    </div>
+  </section>
+
+  <!-- ========== VOICE ========== -->
+  <section class="section voice" id="voice">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">VOICE</span>
+        <h2 class="section-head__ja">お客様の声</h2>
+      </div>
+      <p class="section-lead">「私にできるかな…」と不安だった方々から、嬉しいお声をいただいています。</p>
+      <div class="voice__grid">
+        <div class="voice-card fade-up">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「運動なんて何年もしていなくて、正直怖かったです。でも健太さんが"できなくて当たり前ですよ"と言ってくれて、すごく安心しました。今では週1回のトレーニングが自分へのご褒美みたいな時間になっています。体重も落ちましたが、それ以上に気持ちが明るくなりました！」</p>
+          <div class="voice-card__client">
+            <span class="voice-card__name">40代 女性・運動未経験</span>
+            <span class="voice-card__period">トレーニング歴 6ヶ月</span>
+          </div>
+        </div>
+        <div class="voice-card fade-up delay-1">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「産後から自分に自信が持てなくなって、何かを変えたくて始めました。最初はスクワット5回でもきつかったのに、今は20回できるようになって。"私にもできるんだ"って思えたことが一番の変化です。子どもに"ママ最近笑ってるね"と言われて泣きそうになりました。」</p>
+          <div class="voice-card__client">
+            <span class="voice-card__name">30代 女性・運動初心者</span>
+            <span class="voice-card__period">トレーニング歴 4ヶ月</span>
+          </div>
+        </div>
+        <div class="voice-card fade-up delay-2">
+          <div class="voice-card__stars">★★★★★</div>
+          <p class="voice-card__text">「仕事のストレスで眠れない日が続いていて、心療内科の先生に"軽い運動を"と勧められて始めました。出張で来てくれるので、人目を気にせずできるのが本当にありがたいです。今はぐっすり眠れるようになって、休日に出かける元気も戻ってきました。」</p>
+          <div class="voice-card__client">
+            <span class="voice-card__name">30代 女性・運動未経験</span>
+            <span class="voice-card__period">トレーニング歴 3ヶ月</span>
+          </div>
+        </div>
+      </div>
+      <p class="results__disclaimer">※お客様の許可をいただき掲載しています。</p>
+    </div>
+  </section>
+
+  <!-- ========== PLANS ========== -->
+  <section class="section plans" id="plans">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">PLANS & PRICE</span>
+        <h2 class="section-head__ja">プラン・料金</h2>
+      </div>
+      <p class="section-lead">ジム使用料・交通費込みの安心価格。追加料金の心配なく通えます。</p>
+
+      <!-- Step 1: Trial -->
+      <div class="plans-block fade-up">
+        <div class="plans-block__header">
+          <span class="plans-block__step">STEP 1</span>
+          <h3>初回体験レッスン <span>（60分）</span></h3>
+          <p>まずはここから！ご希望のエリアによって料金が変わります。</p>
+        </div>
+        <div class="plan-cards plan-cards--2">
+          <div class="plan-card plan-card--accent">
+            <div class="plan-card__badge">最安値</div>
+            <h4>神田駅 / 大島駅エリア</h4>
+            <p class="plan-card__area">神田駅（徒歩1分）または大島駅（徒歩5分）</p>
+            <div class="plan-card__price">
+              <span class="plan-card__amount">4,000</span>
+              <span class="plan-card__tax">円（税込）</span>
+            </div>
+          </div>
+          <div class="plan-card">
+            <h4>その他都内のレンタルジム</h4>
+            <p class="plan-card__area">都内各所のレンタルジム</p>
+            <div class="plan-card__price">
+              <span class="plan-card__amount">4,500</span>
+              <span class="plan-card__tax">円（税込）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2: Regular -->
+      <div class="plans-block fade-up delay-1">
+        <div class="plans-block__header">
+          <span class="plans-block__step">STEP 2</span>
+          <h3>2回目以降 <span>（60分）</span></h3>
+        </div>
+        <div class="plan-cards plan-cards--3">
+          <div class="plan-card">
+            <h4>都度払い</h4>
+            <div class="plan-card__price">
+              <span class="plan-card__amount">6,600</span>
+              <span class="plan-card__tax">円</span>
+            </div>
+            <p class="plan-card__note">1回あたり</p>
+          </div>
+          <div class="plan-card plan-card--accent">
+            <div class="plan-card__badge">10% OFF</div>
+            <h4>3時間券</h4>
+            <div class="plan-card__price">
+              <span class="plan-card__amount">5,900</span>
+              <span class="plan-card__tax">円/時間</span>
+            </div>
+            <p class="plan-card__note">総額：17,700円</p>
+          </div>
+          <div class="plan-card plan-card--best">
+            <div class="plan-card__badge">21% OFF</div>
+            <h4>8時間券</h4>
+            <div class="plan-card__price">
+              <span class="plan-card__amount">5,200</span>
+              <span class="plan-card__tax">円/時間</span>
+            </div>
+            <p class="plan-card__note">総額：41,600円</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Options -->
+      <div class="plans-block fade-up delay-2">
+        <div class="plans-block__header">
+          <h3>オプション</h3>
+        </div>
+        <div class="options-list">
+          <div class="option-item">
+            <div class="option-item__name">神奈川・埼玉・千葉のレンタルジム</div>
+            <div class="option-item__price">+ 1,000円</div>
+            <div class="option-item__note">出張に伴う交通費・移動時間分としていただきます</div>
+          </div>
+          <div class="option-item">
+            <div class="option-item__name">お二人ペア受講</div>
+            <div class="option-item__price">+ 3,000円</div>
+            <div class="option-item__note">お友達・ご姉妹での参加もOK。一人じゃ不安な方にもおすすめ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plans__cta fade-up">
+        <a href="#contact" class="btn btn--primary btn--lg">初回体験を予約する →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW TO BUY ========== -->
+  <section class="section howtobuy" id="howtobuy">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">HOW TO BUY</span>
+        <h2 class="section-head__ja">購入方法</h2>
+      </div>
+      <div class="howtobuy__steps fade-up">
+        <div class="howtobuy__step">
+          <div class="howtobuy__step-num">01</div>
+          <div class="howtobuy__step-body">
+            <h3>Instagram DMまたはフォームからご連絡</h3>
+            <p>ご希望の日時・エリア・お悩みをお送りください。</p>
+          </div>
+        </div>
+        <div class="howtobuy__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="howtobuy__step">
+          <div class="howtobuy__step-num">02</div>
+          <div class="howtobuy__step-body">
+            <h3>日程・場所の確認</h3>
+            <p>ご都合に合わせてレンタルジムを手配します。</p>
+          </div>
+        </div>
+        <div class="howtobuy__arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        </div>
+        <div class="howtobuy__step">
+          <div class="howtobuy__step-num">03</div>
+          <div class="howtobuy__step-body">
+            <h3>当日・お支払い</h3>
+            <p>レッスン後にお支払い。現金・振込・PayPay等対応。回数券ご希望の方はご案内します。</p>
+          </div>
+        </div>
+      </div>
+      <div class="howtobuy__cta fade-up delay-1">
+        <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="btn btn--instagram btn--lg">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Instagram DMはこちら
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FLOW ========== -->
+  <section class="section flow" id="flow">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">FLOW</span>
+        <h2 class="section-head__ja">サービスの流れ</h2>
+      </div>
+      <div class="flow__steps">
+        <div class="flow__step fade-up">
+          <div class="flow__step-inner">
+            <div class="flow__num">01</div>
+            <div class="flow__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>お問い合わせ</h3>
+            <p>Instagram DM またはお問い合わせフォームから、お悩みやご要望をお気軽にご連絡ください。</p>
+          </div>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step fade-up delay-1">
+          <div class="flow__step-inner">
+            <div class="flow__num">02</div>
+            <div class="flow__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>日程・場所の確認</h3>
+            <p>ご希望の日時とエリアをお伝えください。ご都合に合わせてレンタルジムを手配します。</p>
+          </div>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step fade-up delay-2">
+          <div class="flow__step-inner">
+            <div class="flow__num">03</div>
+            <div class="flow__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <h3>カウンセリング</h3>
+            <p>初回は丁寧にカウンセリング。体の状態だけでなく、今のお悩みや不安もお聞かせください。あなたに合ったペースでプログラムを設計します。</p>
+          </div>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step fade-up delay-3">
+          <div class="flow__step-inner">
+            <div class="flow__num">04</div>
+            <div class="flow__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3>トレーニング開始</h3>
+            <p>あなたの体力に合わせた60分間のトレーニング。「きつすぎる」は絶対にしません。楽しく動けるペースで丁寧に指導します。</p>
+          </div>
+        </div>
+        <div class="flow__connector" aria-hidden="true"></div>
+        <div class="flow__step fade-up delay-4">
+          <div class="flow__step-inner">
+            <div class="flow__num">05</div>
+            <div class="flow__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h3>心も体も変わる！</h3>
+            <p>体の変化はもちろん、「気持ちが前向きになった」「自分を好きになれた」——そんな心の変化を一緒に実感しましょう。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-head__en">CONTACT</span>
+        <h2 class="section-head__ja">お問い合わせ</h2>
+      </div>
+      <p class="section-lead">「こんなこと聞いていいのかな」も大歓迎。まずはお気軽にご連絡ください。</p>
+      <div class="contact__inner">
+        <div class="contact__sns fade-up">
+          <h3>SNSからのお問い合わせ</h3>
+          <p>InstagramのDMからでもお気軽にどうぞ。</p>
+          <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="btn btn--instagram btn--lg">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @ogaken_fitness をフォロー・DM
+          </a>
+        </div>
+        <div class="contact__divider fade-up delay-1"><span>または</span></div>
+        <div class="contact__form-wrap fade-up delay-2">
+          <h3>お問い合わせフォーム</h3>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">お名前 <span class="required">必須</span></label>
+              <input type="text" id="name" name="name" placeholder="山田 花子" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">メールアドレス <span class="required">必須</span></label>
+              <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="subject">お問い合わせ種別</label>
+              <select id="subject" name="subject">
+                <option value="">選択してください</option>
+                <option value="trial">初回体験レッスンの予約</option>
+                <option value="plan">プラン・料金について</option>
+                <option value="area">対応エリアについて</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">メッセージ <span class="required">必須</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="例：運動経験がほぼないのですが大丈夫でしょうか？ / 体力に自信がなくて不安です / まずは話だけ聞いてみたいです　など、何でもお気軽にどうぞ。" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">送信する</button>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <p>お問い合わせを受け付けました。<br>2〜3営業日以内にご返信いたします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#top" class="footer__logo">OGAKEN<span>FITNESS</span></a>
+          <p>パーソナルトレーナー 小笠原健太</p>
+          <p>東京都内・出張対応</p>
+          <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="footer__sns" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+        <nav class="footer__nav" aria-label="フッターナビ">
+          <ul>
+            <li><a href="#about">サービスについて</a></li>
+            <li><a href="#profile">プロフィール</a></li>
+            <li><a href="#results">実績</a></li>
+            <li><a href="#plans">プラン・料金</a></li>
+            <li><a href="#flow">サービスの流れ</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025-2026 小笠原健太 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="float-cta" id="floatCta" aria-hidden="true">
+    <a href="#contact" class="btn btn--primary">まずは気軽に相談する</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
