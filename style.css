@@ -1370,8 +1370,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   .howtobuy__steps { flex-direction: column; }
   .howtobuy__arrow { transform: rotate(90deg); }
   .flow__connector { display: none; }
-  .flow__steps { gap: 12px; }
-  .flow__step { min-width: 140px; flex: 1 1 calc(50% - 6px); }
+  .flow__steps { flex-direction: column; gap: 12px; }
+  .flow__step { min-width: auto; flex: 1 1 100%; }
 }
 
 /* =============================================
@@ -1393,7 +1393,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }
   .numbers__val { font-size: 1.8rem; }
 
+  .flow__steps { flex-direction: column; }
   .flow__step { flex: 1 1 100%; }
+  .flow__connector { display: none; }
   .plans-block { padding: 24px 20px; }
   .plan-card { padding: 24px 20px; }
 
