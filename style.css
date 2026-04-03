@@ -193,10 +193,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 .header__nav { margin-left: auto; }
 .header__nav ul {
   display: flex;
-  gap: 28px;
+  gap: 20px;
 }
 .header__nav a {
-  font-size: .85rem;
+  font-size: .82rem;
   font-weight: 500;
   color: rgba(255,255,255,.85);
   letter-spacing: .04em;
@@ -204,7 +204,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 }
 .header__nav a:hover { color: var(--clr-main); }
 
-.header__cta { margin-left: 16px; padding: 10px 22px; font-size: .85rem; }
+.header__cta { margin-left: 12px; padding: 10px 18px; font-size: .82rem; }
 
 .header__ig {
   display: flex;
@@ -1381,6 +1381,12 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   background: var(--clr-main);
   border-color: var(--clr-main);
   color: var(--clr-white);
+}
+.header--sub .header__cta {
+  display: inline-flex;
+  margin-left: auto;
+  padding: 8px 20px;
+  font-size: .85rem;
 }
 .legal {
   padding: 120px 0 80px;
