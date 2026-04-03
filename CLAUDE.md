@@ -42,6 +42,7 @@ ogaken-fitness/
 ├── index.html      # メインHP（シングルページ）
 ├── tokushoho.html  # 特定商取引法に基づく表記
 ├── privacy.html    # プライバシーポリシー
+├── disclaimer.html # 免責事項（効果の個人差・安全なトレーニングのための注意事項）
 ├── style.css       # スタイルシート（レスポンシブ対応済み）
 ├── script.js       # スクロールアニメーション・ハンバーガーメニュー等
 ├── server.js       # ローカルプレビュー用Node.jsサーバー（port 3000）
@@ -113,3 +114,5 @@ preview_start: "ogaken-fitness" → localhost:3000（Node.js http.server）
 - 2026-04-03：プロフィール画像を丸型トリミングに変更（Geminiマーク完全非表示）
 - 2026-04-03：ファーストビュー画像の位置調整（トレーナーが見えるようobject-position: 30%）
 - 2026-04-03：お客様の声カードに女性アバターアイコン追加
+- 2026-04-03：ヒーロー内KPI行を削除（numbersセクションのみに統一）
+- 2026-04-03：免責事項ページ追加（効果の個人差・安全なトレーニング注意事項）
