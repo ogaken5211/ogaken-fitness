@@ -334,14 +334,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   right: 0;
   top: 0;
   bottom: 0;
-  width: 43%;
-  background: var(--clr-main);
-  clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 28px;
+  width: 48%;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
   z-index: 1;
   overflow: hidden;
 }
@@ -349,66 +343,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,.08) 0%, transparent 60%);
+  background: linear-gradient(to right, rgba(30,26,25,.6) 0%, transparent 50%);
+  z-index: 1;
   pointer-events: none;
 }
-.hero__panel-wm {
-  position: absolute;
-  font-family: var(--ff-en);
-  font-weight: 900;
-  font-size: 5.5rem;
-  color: rgba(255,255,255,.07);
-  letter-spacing: .12em;
-  text-align: center;
-  line-height: 1.1;
-  user-select: none;
-  pointer-events: none;
-}
-.hero__panel-photo {
-  position: relative;
-  z-index: 2;
-  width: 200px;
-  height: 260px;
-  background: rgba(255,255,255,.12);
-  border-radius: 100px 100px 70px 70px;
-  border: 2px solid rgba(255,255,255,.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  overflow: hidden;
-  box-shadow: 0 16px 48px rgba(0,0,0,.2);
-}
-.hero__panel-photo img {
+.hero__panel-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
-}
-.hero__panel-badge {
-  position: relative;
-  z-index: 2;
-  background: rgba(255,255,255,.15);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,.3);
-  border-radius: 10px;
-  padding: 12px 28px;
-  text-align: center;
-  color: var(--clr-white);
-}
-.hero__panel-badge strong {
-  display: block;
-  font-size: 1.05rem;
-  letter-spacing: .08em;
-  margin-bottom: 3px;
-}
-.hero__panel-badge span {
-  font-family: var(--ff-en);
-  font-size: .68rem;
-  letter-spacing: .1em;
-  opacity: .65;
-  font-weight: 600;
+  object-position: center center;
 }
 
 /* --- Main content (left side) --- */
@@ -643,12 +586,16 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   gap: 64px;
   align-items: start;
 }
+.profile__img-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
 .profile__img {
   width: 100%;
   aspect-ratio: 3/4;
   object-fit: cover;
-  object-position: center top;
-  border-radius: var(--radius);
+  object-position: center 15%;
+  display: block;
 }
 
 .profile__name-block { margin-bottom: 24px; }
