@@ -548,7 +548,12 @@
         <div class="contact__divider fade-up delay-1"><span>または</span></div>
         <div class="contact__form-wrap fade-up delay-2">
           <h3>お問い合わせフォーム</h3>
-          <form class="contact-form" id="contactForm" novalidate>
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/o.mnktr0211+biz@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="【OGAKEN FITNESS】お問い合わせがありました">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_next" value="https://ogaken5211.github.io/ogaken-fitness/thanks.html">
             <div class="form-group">
               <label for="name">お名前 <span class="required">必須</span></label>
               <input type="text" id="name" name="name" placeholder="山田 花子" required autocomplete="name">
@@ -561,10 +566,10 @@
               <label for="subject">お問い合わせ種別</label>
               <select id="subject" name="subject">
                 <option value="">選択してください</option>
-                <option value="trial">初回体験レッスンの予約</option>
-                <option value="plan">プラン・料金について</option>
-                <option value="area">対応エリアについて</option>
-                <option value="other">その他</option>
+                <option value="初回体験レッスンの予約">初回体験レッスンの予約</option>
+                <option value="プラン・料金について">プラン・料金について</option>
+                <option value="対応エリアについて">対応エリアについて</option>
+                <option value="その他">その他</option>
               </select>
             </div>
             <div class="form-group">
@@ -573,10 +578,6 @@
             </div>
             <button type="submit" class="btn btn--primary btn--full">送信する</button>
           </form>
-          <div class="form-success" id="formSuccess" style="display:none;">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <p>お問い合わせを受け付けました。<br>2〜3営業日以内にご返信いたします。</p>
-          </div>
         </div>
       </div>
     </div>

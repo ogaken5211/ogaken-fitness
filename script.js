@@ -95,26 +95,5 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-// ---------- Contact form (demo handler) ----------
-const contactForm = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-
-if (contactForm) {
-  contactForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    // Basic validation
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    if (!name || !email || !message) {
-      alert('お名前・メールアドレス・メッセージは必須項目です。');
-      return;
-    }
-
-    // Show success state (real form requires backend/Formspree/etc.)
-    contactForm.style.display = 'none';
-    formSuccess.style.display = 'block';
-  });
-}
+// ---------- Contact form ----------
+// FormSubmit.co handles submission and redirects to thanks.html
