@@ -41,6 +41,10 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
             初回体験レッスンの予約
           </button>
+          <button class="contact-tab" data-target="form-repeat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M17 1l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 23l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+            2回目以降の予約
+          </button>
           <button class="contact-tab" data-target="form-inquiry">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
             サービスに関するお問い合わせ
@@ -122,6 +126,27 @@
             </div>
           </div>
           <div class="form-group">
+            <label for="trial-date3">第3希望日時 <span class="optional">任意</span></label>
+            <div class="form-date-group">
+              <input type="date" id="trial-date3" name="date_3rd">
+              <select name="time_3rd">
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
             <label for="trial-message">お悩み・事前にお伝えしたいこと <span class="optional">任意</span></label>
             <textarea id="trial-message" name="message" rows="4" placeholder="例：運動経験がほぼないのですが大丈夫でしょうか？ / 体力に自信がなくて不安です / 膝が痛いのですが対応できますか？"></textarea>
           </div>
@@ -135,7 +160,124 @@
         </form>
       </div>
 
-      <!-- Form B: General Inquiry -->
+      <!-- Form B: Repeat Reservation -->
+      <div class="contact-page__form-wrap" id="form-repeat" style="display:none;">
+        <form class="contact-form" action="https://formsubmit.co/o.mnktr0211+biz@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【OGAKEN FITNESS】2回目以降のご予約">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://ogaken5211.github.io/ogaken-fitness/thanks.html">
+          <input type="hidden" name="inquiry_type" value="2回目以降の予約">
+
+          <div class="form-group">
+            <label for="repeat-name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="repeat-name" name="name" placeholder="例：山田 花子" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="repeat-email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="repeat-email" name="email" placeholder="例：sample@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="repeat-tel">電話番号 <span class="optional">任意</span></label>
+            <input type="tel" id="repeat-tel" name="phone" placeholder="例：090-0000-0000" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label>ご希望エリア <span class="required">必須</span></label>
+            <div class="form-radio-group">
+              <label class="form-radio"><input type="radio" name="area" value="神田駅エリア（徒歩1分）" required> 神田駅エリア（徒歩1分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="大島駅エリア（徒歩5分）"> 大島駅エリア（徒歩5分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="菊川駅エリア（徒歩3分）"> 菊川駅エリア（徒歩3分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="その他都内レンタルジム"> その他都内レンタルジム</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="repeat-date1">第1希望日時 <span class="required">必須</span></label>
+            <div class="form-date-group">
+              <input type="date" id="repeat-date1" name="date_1st" required>
+              <select name="time_1st" required>
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="repeat-date2">第2希望日時 <span class="optional">任意</span></label>
+            <div class="form-date-group">
+              <input type="date" id="repeat-date2" name="date_2nd">
+              <select name="time_2nd">
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="repeat-date3">第3希望日時 <span class="optional">任意</span></label>
+            <div class="form-date-group">
+              <input type="date" id="repeat-date3" name="date_3rd">
+              <select name="time_3rd">
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="repeat-plan">ご利用プラン <span class="optional">任意</span></label>
+            <select id="repeat-plan" name="plan">
+              <option value="">選択してください</option>
+              <option value="都度払い">都度払い</option>
+              <option value="3時間券">3時間券</option>
+              <option value="8時間券">8時間券</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="repeat-message">ご要望・連絡事項 <span class="optional">任意</span></label>
+            <textarea id="repeat-message" name="message" rows="4" placeholder="例：前回と同じメニューでお願いします / 肩周りを重点的にやりたいです"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" required>
+              <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する <span class="required">必須</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg">上記内容で送信する</button>
+        </form>
+      </div>
+
+      <!-- Form C: General Inquiry -->
       <div class="contact-page__form-wrap" id="form-inquiry" style="display:none;">
         <form class="contact-form" action="https://formsubmit.co/o.mnktr0211+biz@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="【OGAKEN FITNESS】サービスに関するお問い合わせ">
