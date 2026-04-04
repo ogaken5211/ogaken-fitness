@@ -1585,6 +1585,22 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   accent-color: var(--clr-main);
   cursor: pointer;
 }
+.area-other-input {
+  margin-top: 4px;
+  margin-left: 26px;
+  padding: 10px 14px;
+  font-size: .95rem;
+  font-family: var(--ff-ja);
+  border: 1px solid var(--clr-border);
+  border-radius: 8px;
+  width: calc(100% - 26px);
+  transition: var(--transition);
+}
+.area-other-input:focus {
+  outline: none;
+  border-color: var(--clr-main);
+  box-shadow: 0 0 0 3px rgba(232,132,124,.15);
+}
 
 /* Date group */
 .form-date-group {

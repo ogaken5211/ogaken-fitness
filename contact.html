@@ -81,6 +81,7 @@
               <label class="form-radio"><input type="radio" name="area" value="大島駅エリア（徒歩5分）"> 大島駅エリア（徒歩5分）</label>
               <label class="form-radio"><input type="radio" name="area" value="菊川駅エリア（徒歩3分）"> 菊川駅エリア（徒歩3分）</label>
               <label class="form-radio"><input type="radio" name="area" value="その他都内レンタルジム"> その他都内レンタルジム</label>
+              <input type="text" class="area-other-input" name="area_detail" placeholder="例：池袋駅 / 都営新宿線の沿線" style="display:none;">
             </div>
           </div>
           <div class="form-group">
@@ -189,6 +190,7 @@
               <label class="form-radio"><input type="radio" name="area" value="大島駅エリア（徒歩5分）"> 大島駅エリア（徒歩5分）</label>
               <label class="form-radio"><input type="radio" name="area" value="菊川駅エリア（徒歩3分）"> 菊川駅エリア（徒歩3分）</label>
               <label class="form-radio"><input type="radio" name="area" value="その他都内レンタルジム"> その他都内レンタルジム</label>
+              <input type="text" class="area-other-input" name="area_detail" placeholder="例：池袋駅 / 都営新宿線の沿線" style="display:none;">
             </div>
           </div>
           <div class="form-group">
@@ -255,8 +257,8 @@
             </div>
           </div>
           <div class="form-group">
-            <label for="repeat-plan">ご利用プラン <span class="optional">任意</span></label>
-            <select id="repeat-plan" name="plan">
+            <label for="repeat-plan">ご利用プラン <span class="required">必須</span></label>
+            <select id="repeat-plan" name="plan" required>
               <option value="">選択してください</option>
               <option value="都度払い">都度払い</option>
               <option value="3時間券">3時間券</option>
@@ -346,6 +348,22 @@
       tab.classList.add('active');
       document.querySelectorAll('.contact-page__form-wrap').forEach(function(f) { f.style.display = 'none'; });
       document.getElementById(tab.dataset.target).style.display = 'block';
+    });
+  });
+
+  // Show/hide text input when "その他都内レンタルジム" is selected
+  document.querySelectorAll('.form-radio-group').forEach(function(group) {
+    var otherInput = group.querySelector('.area-other-input');
+    if (!otherInput) return;
+    group.querySelectorAll('input[type="radio"]').forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        if (radio.value === 'その他都内レンタルジム') {
+          otherInput.style.display = 'block';
+        } else {
+          otherInput.style.display = 'none';
+          otherInput.value = '';
+        }
+      });
     });
   });
   </script>
