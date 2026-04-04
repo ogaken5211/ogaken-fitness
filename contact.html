@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OGAKEN FITNESSへのお問い合わせ・初回体験レッスンのご予約はこちらから。">
+  <title>お問い合わせ | OGAKEN FITNESS</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header header--sub" id="header">
+    <div class="header__inner container">
+      <a href="index.html" class="header__logo" aria-label="OGAKEN FITNESS">
+        <svg class="header__logo-svg" viewBox="0 0 260 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="4" width="4" height="24" rx="2" fill="#E8847C"/>
+          <text x="14" y="23" font-family="'Montserrat', sans-serif" font-weight="900" font-size="20" letter-spacing="1.5" fill="#ffffff">OGAKEN</text>
+          <text x="126" y="23" font-family="'Montserrat', sans-serif" font-weight="900" font-size="20" letter-spacing="3" fill="#E8847C">FITNESS</text>
+        </svg>
+      </a>
+      <a href="index.html" class="btn btn--outline header__cta">TOPに戻る</a>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="contact-page">
+    <div class="container">
+      <h1 class="contact-page__title">お問い合わせ</h1>
+      <p class="contact-page__lead">初回体験レッスンのご予約やサービスに関するご質問など、<br>お気軽にお問い合わせください。</p>
+
+      <!-- Inquiry type selector -->
+      <div class="contact-page__selector">
+        <p class="contact-page__selector-label">お問い合わせ内容を選択してください <span class="required">必須</span></p>
+        <div class="contact-page__tabs">
+          <button class="contact-tab active" data-target="form-trial">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4-4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="20" y1="8" x2="20" y2="14"/><line x1="23" y1="11" x2="17" y2="11"/></svg>
+            初回体験レッスンの予約
+          </button>
+          <button class="contact-tab" data-target="form-inquiry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            サービスに関するお問い合わせ
+          </button>
+        </div>
+      </div>
+
+      <!-- Form A: Trial Reservation -->
+      <div class="contact-page__form-wrap" id="form-trial">
+        <form class="contact-form" action="https://formsubmit.co/o.mnktr0211+biz@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【OGAKEN FITNESS】初回体験レッスンのご予約">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://ogaken5211.github.io/ogaken-fitness/thanks.html">
+          <input type="hidden" name="inquiry_type" value="初回体験レッスンの予約">
+
+          <div class="form-group">
+            <label for="trial-name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="trial-name" name="name" placeholder="例：山田 花子" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="trial-email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="trial-email" name="email" placeholder="例：sample@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="trial-tel">電話番号 <span class="optional">任意</span></label>
+            <input type="tel" id="trial-tel" name="phone" placeholder="例：090-0000-0000" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label>ご希望エリア <span class="required">必須</span></label>
+            <div class="form-radio-group">
+              <label class="form-radio"><input type="radio" name="area" value="神田駅エリア（徒歩1分）" required> 神田駅エリア（徒歩1分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="大島駅エリア（徒歩5分）"> 大島駅エリア（徒歩5分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="菊川駅エリア（徒歩3分）"> 菊川駅エリア（徒歩3分）</label>
+              <label class="form-radio"><input type="radio" name="area" value="その他都内レンタルジム"> その他都内レンタルジム</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trial-date1">第1希望日時 <span class="required">必須</span></label>
+            <div class="form-date-group">
+              <input type="date" id="trial-date1" name="date_1st" required>
+              <select name="time_1st" required>
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trial-date2">第2希望日時 <span class="optional">任意</span></label>
+            <div class="form-date-group">
+              <input type="date" id="trial-date2" name="date_2nd">
+              <select name="time_2nd">
+                <option value="">時間を選択</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
+                <option value="18:00">18:00</option>
+                <option value="19:00">19:00</option>
+                <option value="20:00">20:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="trial-message">お悩み・事前にお伝えしたいこと <span class="optional">任意</span></label>
+            <textarea id="trial-message" name="message" rows="4" placeholder="例：運動経験がほぼないのですが大丈夫でしょうか？ / 体力に自信がなくて不安です / 膝が痛いのですが対応できますか？"></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" required>
+              <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する <span class="required">必須</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg">上記内容で送信する</button>
+        </form>
+      </div>
+
+      <!-- Form B: General Inquiry -->
+      <div class="contact-page__form-wrap" id="form-inquiry" style="display:none;">
+        <form class="contact-form" action="https://formsubmit.co/o.mnktr0211+biz@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="【OGAKEN FITNESS】サービスに関するお問い合わせ">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://ogaken5211.github.io/ogaken-fitness/thanks.html">
+          <input type="hidden" name="inquiry_type" value="サービスに関するお問い合わせ">
+
+          <div class="form-group">
+            <label for="inq-name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="inq-name" name="name" placeholder="例：山田 花子" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="inq-email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="inq-email" name="email" placeholder="例：sample@email.com" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="inq-tel">電話番号 <span class="optional">任意</span></label>
+            <input type="tel" id="inq-tel" name="phone" placeholder="例：090-0000-0000" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="inq-message">お問い合わせ内容 <span class="required">必須</span></label>
+            <textarea id="inq-message" name="message" rows="6" placeholder="ご質問やご相談の内容をご記入ください。" required></textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-checkbox">
+              <input type="checkbox" required>
+              <a href="privacy.html" target="_blank">プライバシーポリシー</a>に同意する <span class="required">必須</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full btn--lg">上記内容で送信する</button>
+        </form>
+      </div>
+
+      <!-- Other contact methods -->
+      <div class="contact-page__other">
+        <p>その他のお問い合わせ方法</p>
+        <div class="contact-page__other-buttons">
+          <a href="https://www.instagram.com/ogaken_fitness" target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram DM
+          </a>
+          <a href="mailto:o.mnktr0211+biz@gmail.com" class="btn btn--outline">
+            メール
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2025-2026 小笠原健太 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // Tab switching for contact forms
+  document.querySelectorAll('.contact-tab').forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      document.querySelectorAll('.contact-tab').forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      document.querySelectorAll('.contact-page__form-wrap').forEach(function(f) { f.style.display = 'none'; });
+      document.getElementById(tab.dataset.target).style.display = 'block';
+    });
+  });
+  </script>
+
+</body>
+</html>
