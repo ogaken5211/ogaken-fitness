@@ -1120,22 +1120,59 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   content: '→';
   font-weight: 700;
 }
+.flow__payment {
+  text-align: center;
+  color: var(--clr-sub);
+  font-size: .88rem;
+  margin-top: 32px;
+}
+.flow__cta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
 
 /* =============================================
    CONTACT
    ============================================= */
-.contact { background: var(--clr-bg); }
+.section.contact { background: var(--clr-dark); }
+.contact .section-head__en { color: var(--clr-main); }
+.contact .section-head__ja { color: var(--clr-white); }
+.contact .section-head__ja::after { background: var(--clr-main); }
+.contact .section-lead { color: rgba(255,255,255,.6); }
 .contact__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  max-width: 420px;
+  gap: 24px;
+  max-width: 560px;
   margin: 0 auto;
+  padding: 0 16px;
 }
-.contact__buttons .btn {
+.contact__buttons-main {
+  display: flex;
+  gap: 16px;
   width: 100%;
+}
+.contact__buttons-main .btn {
+  flex: 1;
   justify-content: center;
+}
+.contact__mail-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,.5);
+  font-size: .85rem;
+  transition: color var(--transition);
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  padding-bottom: 2px;
+}
+.contact__mail-link:hover {
+  color: var(--clr-white);
+  border-color: rgba(255,255,255,.5);
 }
 .contact__inner {
   display: grid;
@@ -1313,6 +1350,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
 }
 .float-cta .btn {
   box-shadow: 0 4px 20px rgba(232,132,124,.5);
+  font-size: .85rem;
+  padding: 12px 24px;
 }
 
 /* =============================================
@@ -1337,6 +1376,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   .contact__divider span { writing-mode: horizontal-tb; padding: 0 16px; }
   .contact__divider span::before,
   .contact__divider span::after { display: none; }
+  .contact__buttons-main { flex-direction: column; }
   .footer__inner { grid-template-columns: 1fr; }
   .numbers__grid { grid-template-columns: repeat(2, 1fr); }
   .howtobuy__steps { flex-direction: column; }
@@ -1353,7 +1393,14 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   .section { padding: 64px 0; }
   .section-head__ja { font-size: 1.5rem; }
 
-  .hero__panel { display: none; }
+  .hero__panel {
+    width: 100%;
+    clip-path: none;
+    opacity: .18;
+  }
+  .hero__panel::before {
+    background: linear-gradient(to right, rgba(30,26,25,.7) 0%, rgba(30,26,25,.4) 100%);
+  }
   .hero__content { max-width: 100%; padding: 108px 0 64px; }
   .hero__title { font-size: 2.2rem; }
   .hero__actions { flex-direction: column; }
@@ -1373,6 +1420,9 @@ button { cursor: pointer; border: none; background: none; font-family: var(--ff-
   .contact__inner { gap: 24px; }
   .contact__sns .btn,
   .contact__form-wrap .btn { white-space: normal; padding: 14px 20px; font-size: .9rem; max-width: 100%; }
+  .contact__buttons-main { flex-direction: column; }
+  .flow__cta { flex-direction: column; align-items: center; }
+  .flow__cta .btn { width: 100%; max-width: 340px; justify-content: center; }
 }
 
 /* =============================================
